@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<h1>products Information</h1><hr>
+{% if quiz %}
+<table border=2>
+    <thead>
+    <th>name</th>
+    <th>price</th>
+    <th>image</th>
+    </thead>
+    {% for q in quiz %}
+    <tr>
+        <td>{{q.name}}</td>
+        <td>{{q.price}}</td>
+        <td>{{q.image}}</td>
+    </tr>
+    {%endfor%}
+</table>
+{%else%}
+<p>No record found!</p>
+{%endif%}
+
+</body>
+
+</html><html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
